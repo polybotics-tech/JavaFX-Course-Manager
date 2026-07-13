@@ -1,0 +1,28 @@
+/* Stylesheet for my custom Toast popup */
+
+.toast {
+    -fx-text-fill: white;
+    -fx-font-family: "Poppins";
+    -fx-font-size: 12px;
+
+    -fx-padding: 8px 12px;
+
+    -fx-background-radius: 999;
+    -fx-border-radius: 999;
+}
+
+.toast-success {
+    -fx-background-color: #49b3a2;
+}
+
+.toast-error {
+    -fx-background-color: #dc2b2b;
+}
+
+.toast-warning {
+    -fx-background-color: #ee9229;
+}
+
+.toast-info {
+    -fx-background-color: #2563eb;
+}

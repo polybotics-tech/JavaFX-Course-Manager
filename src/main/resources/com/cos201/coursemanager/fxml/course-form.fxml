@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="540.0" prefWidth="480.0" spacing="32.0" stylesheets="@../css/auth.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cos201.coursemanager.controllers.CourseFormController">
+    <children>
+        <VBox maxWidth="1.7976931348623157E308" styleClass="heading">
+            <children>
+                <Label fx:id="titleLabel" alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="title" text="New Course" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                <Label alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="subtitle" text="Manage your course information with ease" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+            </children>
+        </VBox>
+        <VBox prefHeight="200.0" prefWidth="100.0" spacing="16.0">
+            <children>
+                <VBox maxWidth="1.7976931348623157E308" styleClass="inp-group">
+                    <children>
+                        <Label styleClass="inp-label" text="Course Title" />
+                        <TextField fx:id="titleField" maxWidth="1.7976931348623157E308" prefHeight="48.0" promptText="ex. Computer Programming I" styleClass="inp-box" />
+                    </children>
+                </VBox>
+                <VBox maxWidth="1.7976931348623157E308" styleClass="inp-group">
+                    <children>
+                        <Label styleClass="inp-label" text="Course Code" />
+                        <TextField fx:id="codeField" maxWidth="1.7976931348623157E308" prefHeight="48.0" promptText="ex. COS201" styleClass="inp-box" />
+                    </children>
+                </VBox>
+            <VBox layoutX="10.0" layoutY="89.0" maxWidth="1.7976931348623157E308" styleClass="inp-group">
+               <children>
+                  <Label styleClass="inp-label" text="Course Unit" />
+                  <TextField fx:id="unitField" maxWidth="1.7976931348623157E308" prefHeight="48.0" promptText="ex. 3" styleClass="inp-box" />
+               </children>
+            </VBox>
+            </children>
+        </VBox>
+        <VBox alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" spacing="16.0" styleClass="inp-group">
+            <children>
+                <Button fx:id="saveButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleSaveButtonAction" prefHeight="44.0" styleClass="submit-button" text="Save Course" />
+            <Button graphicTextGap="8.0" mnemonicParsing="false" onAction="#handleBackButtonAction" styleClass="back-button" text="Go Back To Dashboard">
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/arrow-left-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            </children>
+        </VBox>
+    </children>
+    <padding>
+        <Insets bottom="24.0" left="32.0" right="32.0" top="24.0" />
+    </padding>
+</VBox>

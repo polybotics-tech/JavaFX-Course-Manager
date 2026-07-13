@@ -1,0 +1,250 @@
+.root {
+    -fx-font-family: "Poppins", "Segoe UI", Arial;
+    -fx-background-color: #f5f6f7;
+}
+
+.dash {
+    -fx-background-color: #ffffff;
+    -fx-padding: 8px 16px;
+}
+
+.dash-title {
+    -fx-font-family: "Poppins Bold";
+    -fx-font-size: 16px;
+    -fx-text-fill: #121736;
+}
+
+.dash-fullname {
+    -fx-font-family: "Poppins SemiBold";
+    -fx-font-size: 12px;
+    -fx-text-fill: #3a3e58;
+}
+
+.dash-username {
+    -fx-font-size: 12px;
+    -fx-text-fill: #8996a3;
+}
+
+.dash-user-img {
+    -fx-border-radius: 999;
+    -fx-background-radius: 999;
+    -fx-background-color: #f5f6f7;
+}
+
+.bottom-bar {
+    -fx-padding: 8px 16px 16px;
+    -fx-spacing: 16px;
+    -fx-background-color: #ffffff;
+    -fx-border-width: 1px 0 0 0;
+    -fx-border-color: #e0e6eb transparent transparent transparent;
+}
+
+.overview-card {
+    -fx-padding: 16px;
+    -fx-border-radius: 16;
+    -fx-background-radius: 16;
+    -fx-background-color: #ffffff;
+}
+
+.overview-title {
+    -fx-font-family: "Poppins SemiBold";
+    -fx-font-size: 12px;
+    -fx-text-fill: #8996a3;
+}
+
+.overview-value {
+    -fx-font-family: "Poppins Medium";
+    -fx-font-size: 24px;
+    -fx-text-fill: #3a3e58;
+}
+
+.inp-box {
+    -fx-padding: 8px 12px;
+    -fx-font-size: 14px;
+    -fx-border-color: #e0e6eb;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-background-color: #f5f6f7;
+}
+
+.button {
+    -fx-cursor: hand;
+}
+
+.btn{
+    -fx-pref-height: 38px;
+    -fx-max-height: 38px;
+    -fx-padding: 6px 16px;
+    -fx-background-radius: 999;
+    -fx-border-radius: 999;
+    -fx-font-family: "Poppins Medium";
+    -fx-font-size: 10px;
+}
+
+.btn:disabled, .clear-button:disabled {
+    -fx-background-color: #e0e6eb;
+    -fx-text-fill: #8996a3;
+}
+
+.add-button {
+    -fx-background-color: #0d9b83;
+    -fx-text-fill: #fffdf7;
+}
+
+.edit-button {
+    -fx-background-color: rgb(37, 99, 235, 0.1);
+    -fx-text-fill: rgb(37, 99, 235, 1);
+}
+
+.delete-button {
+    -fx-background-color: rgb(220, 43, 43, 0.1);
+    -fx-text-fill: rgb(220, 43, 43, 1);
+}
+
+.search-button {
+    -fx-pref-height: 32px;
+    -fx-max-height: 32px;
+    -fx-pref-width: 32px;
+    -fx-max-width: 32px;
+    -fx-padding: 0px;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-background-color: #ffffff;
+}
+
+.clear-button {
+    -fx-pref-height: 32px;
+    -fx-max-height: 32px;
+    -fx-pref-width: 32px;
+    -fx-max-width: 32px;
+    -fx-padding: 0px;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-background-color: rgb(220, 43, 43, 0.1);
+}
+
+.main-scroll {
+    -fx-padding: 16px 16px 0px;
+}
+
+.scroll-pane .scroll-bar .thumb {
+    -fx-background-color: #8996a3;
+    -fx-background-radius: 999;
+}
+
+.scroll-pane .scroll-bar .track {
+    -fx-background-color: #f5f6f7;
+    -fx-background-radius: 999;
+}
+
+.scroll-pane .scroll-bar:vertical {
+    -fx-pref-width: 12;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-insets: 0;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .corner {
+    -fx-background-color: transparent;
+}
+
+/* Table Styles */
+
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: transparent;
+    -fx-padding: 4px;
+
+    -fx-table-cell-border-color: transparent;
+    -fx-selection-bar: transparent;
+    -fx-selection-bar-non-focused: transparent;
+}
+
+/* Remove empty background around rows */
+.table-view .virtual-flow .corner {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #e0e6eb;
+}
+
+.table-view .column-header,
+.table-view .filler {
+    -fx-background-color: #f5f6f7;
+
+    -fx-border-width: 0 1 1 0;
+    -fx-border-color: #e0e6eb;
+
+    -fx-padding: 0 12px;
+
+    -fx-size: 28px;
+}
+
+.table-view .column-header .label {
+    -fx-font-family: "Poppins Medium";
+    -fx-font-size: 12px;
+    -fx-text-fill: #121736;
+
+    -fx-alignment: CENTER_LEFT;
+}
+
+
+.table-row-cell {
+    -fx-background-color: white;
+    -fx-cell-size: 28px;
+
+    /* Bottom border only */
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: transparent transparent #e0e6eb transparent;
+}
+
+.table-row-cell:filled:hover {
+    -fx-background-color: #f5f6f7;
+}
+
+/* Selected row */
+
+.table-row-cell:filled:selected {
+    -fx-background-color: rgb(37, 99, 235, 0.1);
+}
+
+/* Keep selection colour when table loses focus */
+
+.table-row-cell:filled:selected:focused {
+    -fx-background-color: rgb(37, 99, 235, 0.1);
+}
+
+
+.table-cell {
+    -fx-font-family: "Poppins";
+    -fx-font-size: 12px;
+    -fx-text-fill: #3a3e58;
+
+    -fx-padding: 0 12px;
+
+    /* Right border only */
+    -fx-border-width: 0 1 0 0;
+    -fx-border-color: transparent #e0e6eb transparent transparent;
+
+    -fx-alignment: CENTER_LEFT;
+}
+
+/* Keep text colour on selected rows */
+
+.table-row-cell:selected .table-cell {
+    -fx-text-fill: #3a3e58;
+}
+
+/* Remove focus ring */
+
+.table-view:focused {
+    -fx-background-insets: 0;
+}
