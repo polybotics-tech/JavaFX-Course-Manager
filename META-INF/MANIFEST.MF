@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven 3.8.5
+Built-By: pc
+Build-Jdk: 25.0.3
+Main-Class: com.cos201.coursemanager.Launcher
+

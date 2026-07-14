@@ -15,7 +15,14 @@ import java.util.List;
  */
 public class FileService {
 
-    private static final String DATA_DIR = "src/main/resources/com/cos201/coursemanager/data";
+    private static final String APP_DIR = System.getProperty("user.home")
+            + File.separator
+            + "AppData"
+            + File.separator
+            + "Local"
+            + File.separator
+            + "CourseManager";
+    private static final String DATA_DIR = APP_DIR + "/data";
     private static final String DATA_FILE = DATA_DIR + "/users.json";
 
     /**
